@@ -55,7 +55,7 @@ export async function getStaticProps() {
         id: player._id.toString(),
       })),
     },
-    revalidate: 10,
+    revalidate: 1,
   };
 }
 
