@@ -31,7 +31,7 @@ export async function getStaticPaths() {
 
   client.close();
   return {
-    fallback: false,
+    fallback: "blocking",
     paths: players.map((player) => ({
       params: { playerId: player._id.toString() },
     })),
